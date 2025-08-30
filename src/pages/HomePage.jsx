@@ -22,11 +22,11 @@ export default function HomePage() {
                 />
                 <div className="grid gap-6 md:grid-cols-3">
                     {[{
-                        title: 'Meet Our Pastors', img: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop'
+                        title: 'What We Believe', img: '/pasture_pnp.jpg', linkTo: '/about'
                     }, {
-                        title: 'What We Believe', img: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop'
+                        title: 'Come Fellowship', img: '/pasture_picnic.jpg', linkTo: '/ministries'
                     }, {
-                        title: 'Come Fellowship', img: 'https://images.unsplash.com/photo-1528702748617-c64d49f918af?q=80&w=1200&auto=format&fit=crop'
+                        title: 'Connect With Us', img: '/pasture_ordination2.jpg', linkTo: '/connect'
                     }].map((c, i) => (
                         <Reveal key={i} delay={i * 0.05}>
                             <Card>
@@ -35,7 +35,7 @@ export default function HomePage() {
                                 </div>
                                 <div className="p-5">
                                     <h3 className="text-lg font-semibold">{c.title}</h3>
-                                    <Button variant="ghost" className="mt-3">Learn more →</Button>
+                                    <Button variant="ghost" className="mt-3" onClick={() => window.location.assign(c.linkTo)}>Learn more →</Button>
                                 </div>
                             </Card>
                         </Reveal>
@@ -55,12 +55,11 @@ export default function HomePage() {
             <section className="container py-16">
                 <SectionHeader eyebrow="Life Together" title="Moments from our community" subtitle="Meals, prayer, worship, and rest." />
                 <MasonryGallery images={[
-                    'https://images.unsplash.com/photo-1521335629791-ce4aec67dd53?q=80&w=1400&auto=format&fit=crop',
-                    'https://images.unsplash.com/photo-1516542076529-1ea3854896e1?q=80&w=1400&auto=format&fit=crop',
-                    'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1400&auto=format&fit=crop',
-                    'https://images.unsplash.com/photo-1521335629791-6f1c7c3d7c5f?q=80&w=1400&auto=format&fit=crop',
-                    'https://images.unsplash.com/photo-1511988617509-a57c8a288659?q=80&w=1400&auto=format&fit=crop',
-                    'https://images.unsplash.com/photo-1525161494435-0f4d6e6ac0b3?q=80&w=1400&auto=format&fit=crop',
+                    '/pasture_beach.JPG',
+                    '/pasture_ordination3.jpg',
+                    '/pasture_retreat_prayer.jpg',
+                    '/pasture_retreat_ian.jpg',
+                    '/pasture_aura_farming.JPG'
                 ]} />
             </section>
 

@@ -59,7 +59,7 @@ export default function ConnectPage() {
                 </Reveal>
             </div>
 
-
+                        
             <div id="membership" className="mt-12 scroll-mt-24">
                 <Reveal>
                     <Card className="p-6">

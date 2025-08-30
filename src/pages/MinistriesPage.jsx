@@ -8,19 +8,19 @@ import { Church, Users, Heart, BookOpen } from '../components/Icons'
 const MINISTRIES = [
     {
         name: 'English Ministry (EM)',
-        img: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1600&auto=format&fit=crop',
+        img: '/pasture_ordination.jpg',
         desc: 'Our primary gathering for worship and teaching in English. All ages welcome—come as you are and meet Jesus here.',
         icon: Church,
     },
     {
         name: 'Men’s Small Group',
-        img: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?q=80&w=1600&auto=format&fit=crop',
+        img: '/dudes.JPG',
         desc: 'Brotherhood around Scripture and prayer. We pursue integrity, accountability, and servant leadership together.',
         icon: Users,
     },
     {
         name: 'Women’s Small Group',
-        img: 'https://images.unsplash.com/photo-1516542076529-1ea3854896e1?q=80&w=1600&auto=format&fit=crop',
+        img: '/pasture_beach2.JPG',
         desc: 'A safe, encouraging space to share life, study the Word, and pray for one another through every season.',
         icon: Heart,
     },
@@ -42,7 +42,7 @@ export default function MinistriesPage() {
                     <Reveal key={i} delay={i * 0.05}>
                         <Card className="overflow-hidden">
                             <div className={`grid md:grid-cols-5 ${i % 2 ? '' : ''}`}>
-                                <div className="md:col-span-2 h-60 md:h-full">
+                                <div className="md:col-span-2 h-60 md:h-80">
                                     <img src={m.img} alt={m.name} className="h-full w-full object-cover" />
                                 </div>
                                 <div className="md:col-span-3 p-6">
