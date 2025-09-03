@@ -24,9 +24,9 @@ export default function HomePage() {
                     {[{
                         title: 'What We Believe', img: '/pasture_pnp.jpg', linkTo: '/about'
                     }, {
-                        title: 'Come Fellowship', img: '/pasture_picnic.jpg', linkTo: '/ministries'
+                        title: 'Connect With Us', img: '/pasture_picnic.jpg', linkTo: '/ministries'
                     }, {
-                        title: 'Connect With Us', img: '/pasture_ordination2.jpg', linkTo: '/connect'
+                        title: 'Leave Us A Note', img: '/pasture_retreat.jpg', linkTo: '/connect'
                     }].map((c, i) => (
                         <Reveal key={i} delay={i * 0.05}>
                             <Card>
@@ -43,13 +43,13 @@ export default function HomePage() {
                 </div>
             </section>
 
-
+{/* 
             <section className="container py-12">
                 <SectionHeader eyebrow="This Week" title="Latest Sermon" subtitle="Watch the most recent message or browse the archive." />
                 <Reveal>
                     <SermonEmbed id="dQw4w9WgXcQ" title="Sermon" />
                 </Reveal>
-            </section>
+            </section> */}
 
 
             <section className="container py-16">

@@ -6,92 +6,167 @@ import Reveal from '../components/Reveal';
 export default function AboutPage() {
   return (
     <div className="container py-16 space-y-20">
-      {/* Who We Are + Staff */}
+      {/* 1) WHO WE ARE */}
       <section className="text-center">
         <SectionHeader
-          eyebrow="Who We Are"
-          title="Meet Our Staff"
-          subtitle="A community of believers finding rest in Jesus together."
+          eyebrow="About Us"
+          title="Who We Are"
+          subtitle="To Remember, Reflect, and Rest in Christ"
+          align="center"
+        />
+
+        {/* Story / Vision / Mission — clean editorial tiles with tiny photo accents (optional) */}
+        <div className="grid gap-6 md:grid-cols-3 max-w-6xl mx-auto">
+          <Reveal>
+            <Card className="p-6 h-full text-left">
+              {/* tiny photo accent (optional) */}
+              <div className="aspect-[3/2] overflow-hidden rounded-xl2 border border-line mb-4">
+                <img
+                  src="/about-story.jpg"        /* optional placeholder in /public */
+                  alt="Our Story"
+                  className="w-full h-full object-cover"
+                  onError={(e)=>{ e.currentTarget.style.display='none' }}
+                />
+              </div>
+              <h3 className="font-semibold text-lg">Our Story</h3>
+              <p className="muted mt-2 leading-relaxed first-letter:text-5xl first-letter:font-semibold first-letter:float-left first-letter:mr-2 first-letter:leading-none">
+                Background of <strong>Ilshin Presbyterian Church</strong> & <strong>The Pasture</strong>.
+                We’re a community rooted in the gospel, growing out of the heritage and ministry of Ilshin,
+                and gathering as The Pasture to be a place of rest in Christ for our neighbors.
+              </p>
+            </Card>
+          </Reveal>
+
+          <Reveal delay={0.05}>
+            <Card className="p-6 h-full text-left">
+              <div className="aspect-[3/2] overflow-hidden rounded-xl2 border border-line mb-4">
+                <img
+                  src="/about-vision.jpg"       /* optional placeholder in /public */
+                  alt="Vision"
+                  className="w-full h-full object-cover"
+                  onError={(e)=>{ e.currentTarget.style.display='none' }}
+                />
+              </div>
+              <h3 className="font-semibold text-lg">Vision</h3>
+              <p className="muted mt-2 leading-relaxed">
+                We envision to <strong>Bring</strong> the lost, the weak, and the restless, to <strong>Build</strong> confidence
+                and comfort in Christ, and to <strong>Become</strong> a culture of Christ to our <strong>Community</strong> and beyond.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-ink/80">
+                <li><span className="font-semibold">Bring</span> — invitation and hospitality</li>
+                <li><span className="font-semibold">Build</span> — confidence and comfort in Christ</li>
+                <li><span className="font-semibold">Become</span> — embody a gospel culture for our community</li>
+              </ul>
+            </Card>
+          </Reveal>
+
+          <Reveal delay={0.1}>
+            <Card className="p-6 h-full text-left">
+              <div className="aspect-[3/2] overflow-hidden rounded-xl2 border border-line mb-4">
+                <img
+                  src="/about-mission.jpg"      /* optional placeholder in /public */
+                  alt="Mission"
+                  className="w-full h-full object-cover"
+                  onError={(e)=>{ e.currentTarget.style.display='none' }}
+                />
+              </div>
+              <h3 className="font-semibold text-lg">Mission</h3>
+              <p className="muted mt-2 leading-relaxed">
+                Focusing on <strong>Worship</strong>, leading to <strong>Discipleship</strong>, producing <strong>Fellowship</strong>.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-ink/80">
+                <li><span className="font-semibold">Worship</span> — gather around Word and Sacrament</li>
+                <li><span className="font-semibold">Discipleship</span> — grow through Scripture and prayer</li>
+                <li><span className="font-semibold">Fellowship</span> — share life together in love</li>
+              </ul>
+            </Card>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Elegant separator (line + brand dot) */}
+      <PrettySeparator />
+
+      {/* 2) OUR BELIEFS — single centered card + tasteful link button */}
+      <section className="text-center">
+        <SectionHeader
+          eyebrow="Beliefs"
+          title="Our Beliefs"
+          subtitle="We belong to the Presbyterian Church in America (PCA)."
+          align="center"
+        />
+        <Reveal>
+          <Card className="p-8 max-w-3xl mx-auto text-left">
+            <p className="leading-relaxed muted">
+              Our denomination is the PCA, whose beliefs are summarized in the Westminster Confession of Faith and Catechisms.
+              We gladly confess Christ, submit to Scripture, and seek to live out the gospel together.
+            </p>
+            <div className="mt-5">
+              <a
+                href="https://www.pcaac.org/resources/wcf/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center rounded-full border border-line bg-white px-4 py-2 text-sm font-medium hover:bg-ink/5 transition"
+              >
+                Read the Westminster Standards →
+              </a>
+            </div>
+          </Card>
+        </Reveal>
+      </section>
+
+      {/* Elegant separator */}
+      <PrettySeparator />
+
+      {/* 3) OUR PASTOR — soft gradient panel with pull-quote line */}
+      <section className="text-center">
+        <SectionHeader
+          eyebrow="Leadership"
+          title="Our Pastor"
+          subtitle="Meet Rev. Issac Oh"
           align="center"
         />
 
         <Reveal>
-          <p className="muted max-w-2xl mx-auto leading-relaxed">
-            We are a small, predominantly Korean/Asian community of believers who
-            gather to worship, share meals, pray, and serve together. Our heart
-            is to create a place of rest where people can encounter Christ and
-            be part of a spiritual family.
-          </p>
-        </Reveal>
-
-        <div className="mt-10 grid gap-8 sm:grid-cols-2 md:grid-cols-4 max-w-5xl mx-auto">
-          {[
-            { name: 'Rev. Issac Oh', role: 'Lead Pastor', img: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop' },
-            { name: 'Priscilla An', role: 'Leader', img: 'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=800&auto=format&fit=crop' },
-            { name: 'Eliana Kim', role: 'Leader', img: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=800&auto=format&fit=crop' },
-            { name: 'Bryan Kim', role: 'Leader', img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop' }
-          ].map((s, i) => (
-            <Reveal key={i} delay={i * 0.05}>
-              <Card className="overflow-hidden text-center p-6">
+          <Card className="p-6 md:p-8 max-w-4xl mx-auto bg-gradient-to-br from-white to-brand-light/20">
+            <div className="grid gap-6 md:grid-cols-3 items-start">
+              <div className="md:col-span-1 flex justify-center">
                 <img
-                  src={s.img}
-                  alt={s.name}
-                  className="h-40 w-40 mx-auto rounded-full object-cover ring-2 ring-line"
+                  src="/pastor.jpg"             
+                  alt="Rev. Issac Oh"
+                  className="h-48 w-48 rounded-full object-cover ring-2 ring-line"
                 />
-                <div className="mt-4">
-                  <h4 className="font-semibold">{s.name}</h4>
-                  <p className="text-sm text-ink/60">{s.role}</p>
-                </div>
-              </Card>
-            </Reveal>
-          ))}
-        </div>
+              </div>
+              <div className="md:col-span-2 text-left">
+                <p className="leading-relaxed muted">
+                  Issac Oh was born and raised in Southern California, spending his early years in Orange,
+                  Los Angeles, and San Bernardino Counties. After high school, he moved to Las Vegas, Nevada,
+                  where he pursued a career in the hospitality and entertainment industry for nearly a decade.
+                  During that time, the Lord called him into ministry, leading him back to California to
+                  continue his education and prepare for pastoral service.
+                </p>
+                <p className="leading-relaxed muted mt-4 border-l-2 border-brand/40 pl-4">
+                  Issac earned a B.A. in Christian Ministries from The Master’s University and went on to
+                  receive his Master of Divinity from Westminster Seminary California. He is now an ordained
+                  minister in the Presbyterian Church in America (PCA) and joyfully serves Christ and His
+                  church through preaching, teaching, and shepherding God’s people.
+                </p>
+              </div>
+            </div>
+          </Card>
+        </Reveal>
       </section>
+    </div>
+  );
+}
 
-      {/* Separator */}
-      <div className="border-t border-line mx-auto max-w-4xl" />
-
-      {/* What We Believe */}
-      <section className="text-center">
-        <SectionHeader
-          eyebrow="Beliefs"
-          title="What We Believe"
-          subtitle="Our faith is rooted in Scripture and centered on Christ."
-          align="center"
-        />
-
-        <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
-          {[
-            {
-              title: 'God',
-              desc: 'We believe in one God, eternally existing in three persons: Father, Son, and Holy Spirit.',
-            },
-            {
-              title: 'Scripture',
-              desc: 'We believe the Bible is God’s Word—true, inspired, and authoritative for faith and life.',
-            },
-            {
-              title: 'Salvation',
-              desc: 'We believe salvation is by grace alone, through faith alone, in Christ alone.',
-            },
-            {
-              title: 'The Church',
-              desc: 'We believe the Church is the body of Christ, called to worship, discipleship, and mission.',
-            },
-            {
-              title: 'The Sacraments',
-              desc: 'We practice baptism and the Lord’s Supper as visible signs of God’s covenant promises.',
-            },
-          ].map((b, i) => (
-            <Reveal key={i} delay={i * 0.05}>
-              <Card className="p-6 text-center">
-                <h4 className="font-semibold text-lg">{b.title}</h4>
-                <p className="muted mt-2 leading-relaxed">{b.desc}</p>
-              </Card>
-            </Reveal>
-          ))}
-        </div>
-      </section>
+/** Pretty separator: a thin line with a centered brand dot */
+function PrettySeparator() {
+  return (
+    <div className="flex items-center gap-3 max-w-5xl mx-auto">
+      <span className="h-px bg-line flex-1" />
+      <span className="h-2 w-2 rounded-full bg-brand" />
+      <span className="h-px bg-line flex-1" />
     </div>
   );
 }

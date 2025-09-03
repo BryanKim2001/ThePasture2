@@ -13,7 +13,7 @@ export default function Hero({ onPlan }) {
     return (
         <section ref={ref} className="relative overflow-hidden">
             <motion.div
-                style={{ y, backgroundImage: `url(/pasture_retreat.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                style={{ y, backgroundImage: `url(/worship.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                 className="absolute inset-0"
             />
             <div className="absolute inset-0 bg-[rgba(88,60,32,0.25)] mix-blend-multiply" />
