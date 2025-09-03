@@ -123,7 +123,7 @@ export default function AboutPage() {
         <SectionHeader
           eyebrow="Leadership"
           title="Our Pastor"
-          subtitle="Meet Rev. Issac Oh"
+          subtitle="Meet Issac Oh"
           align="center"
         />
 
@@ -132,7 +132,7 @@ export default function AboutPage() {
             <div className="grid gap-6 md:grid-cols-3 items-start">
               <div className="md:col-span-1 flex justify-center">
                 <img
-                  src="/pastor.jpg"             
+                  src="/pastor_photo.jpg"             
                   alt="Rev. Issac Oh"
                   className="h-48 w-48 rounded-full object-cover ring-2 ring-line"
                 />
