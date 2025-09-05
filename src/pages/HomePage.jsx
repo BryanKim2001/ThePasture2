@@ -6,7 +6,7 @@ import Button from '../components/Button'
 import Reveal from '../components/Reveal'
 import SermonEmbed from '../components/SermonEmbed'
 import MasonryGallery from '../components/MasonryGallery'
-
+import PrettySeparator from '../components/PrettySeparator';
 
 export default function HomePage() {
     return (
@@ -42,8 +42,8 @@ export default function HomePage() {
                     ))}
                 </div>
             </section>
-
-{/* 
+            <PrettySeparator />
+            {/* 
             <section className="container py-12">
                 <SectionHeader eyebrow="This Week" title="Latest Sermon" subtitle="Watch the most recent message or browse the archive." />
                 <Reveal>
@@ -63,7 +63,7 @@ export default function HomePage() {
                 ]} />
             </section>
 
-
+            <PrettySeparator />
             <section className="container py-12">
                 <Card className="p-8 text-center">
                     <h3 className="text-2xl font-semibold">Plan your first visit in 60 seconds</h3>

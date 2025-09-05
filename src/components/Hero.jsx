@@ -42,7 +42,9 @@ export default function Hero({ onPlan }) {
                     <Link to="/visit">
                         <Button variant="primary" className="rounded-full px-6">Visit Us</Button>
                     </Link>
-                    <Link to="/sermons"><Button variant="ghost" className="rounded-full px-6">Watch Sermons</Button></Link>
+                    <Link to="/ministries">
+                        <Button variant="ghost" className="rounded-full px-6">Gatherings</Button>
+                    </Link>
                 </motion.div>
             </div>
         </section>

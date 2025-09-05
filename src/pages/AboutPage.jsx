@@ -2,6 +2,7 @@ import React from 'react';
 import SectionHeader from '../components/SectionHeader';
 import Card from '../components/Card';
 import Reveal from '../components/Reveal';
+import PrettySeparator from '../components/PrettySeparator';
 
 export default function AboutPage() {
   return (
@@ -84,8 +85,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Elegant separator (line + brand dot) */}
       <PrettySeparator />
+
 
       {/* 2) OUR BELIEFS — single centered card + tasteful link button */}
       <section className="text-center">
@@ -115,8 +116,8 @@ export default function AboutPage() {
         </Reveal>
       </section>
 
-      {/* Elegant separator */}
       <PrettySeparator />
+
 
       {/* 3) OUR PASTOR — soft gradient panel with pull-quote line */}
       <section className="text-center">
@@ -156,17 +157,6 @@ export default function AboutPage() {
           </Card>
         </Reveal>
       </section>
-    </div>
-  );
-}
-
-/** Pretty separator: a thin line with a centered brand dot */
-function PrettySeparator() {
-  return (
-    <div className="flex items-center gap-3 max-w-5xl mx-auto">
-      <span className="h-px bg-line flex-1" />
-      <span className="h-2 w-2 rounded-full bg-brand" />
-      <span className="h-px bg-line flex-1" />
     </div>
   );
 }

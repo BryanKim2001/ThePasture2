@@ -5,10 +5,11 @@ import Footer from './layout/Footer'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import SermonsPage from './pages/SermonsPage'
-import MinistriesPage from './pages/MinistriesPage'
+import MinistriesPage from './pages/GatheringsPage'
 import ConnectPage from './pages/ConnectPage'
 import ScrollToHash from './components/ScrollToHash'
 import VisitPage from './pages/VisitPage';
+import GivePage from './pages/GivePage'; 
 
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/ministries" element={<MinistriesPage />} />
           <Route path="/connect" element={<ConnectPage />} />
           <Route path="/visit" element={<VisitPage />} />
+          <Route path="/give" element={<GivePage />} />
           <Route path="*" element={<HomePage />} />
         </Routes>
       </main>

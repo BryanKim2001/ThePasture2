@@ -14,7 +14,7 @@ export default function Footer() {
             <img
               src="/pasture_logo.png"
               alt="The Pasture Logo"
-              className="h-9 w-9 rounded-full object-contain bg-paper ring-1 ring-line"
+              className="h-14 w-14 rounded-full object-contain bg-paper ring-1 ring-line"
             />
             <div>
               <p className="font-semibold">The Pasture</p>
