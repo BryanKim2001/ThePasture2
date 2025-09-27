@@ -9,13 +9,14 @@ import MinistriesPage from './pages/GatheringsPage'
 import ConnectPage from './pages/ConnectPage'
 import ScrollToHash from './components/ScrollToHash'
 import VisitPage from './pages/VisitPage';
+import ScrollToTop from './components/ScrollToTop';
 import GivePage from './pages/GivePage'; 
 
 
 export default function App() {
   return (
     <div className="min-h-screen bg-paper text-ink">
-      <ScrollToHash />
+      <ScrollToTop smooth={false} />
       <Header />
       <main className="pb-20">
         <Routes>
