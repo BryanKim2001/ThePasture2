@@ -1,8 +1,8 @@
 import React from 'react';
 import { Instagram, Youtube } from '../components/Icons';
 
-const INSTAGRAM_URL = 'https://instagram.com/yourhandle'; // TODO: replace
-const YOUTUBE_URL = 'https://youtube.com/@yourchannel';   // TODO: replace
+const INSTAGRAM_URL = 'https://www.instagram.com/thepastureministry/';
+const YOUTUBE_URL = 'https://www.youtube.com/@christcovenantfellowshippc8686';
 
 export default function Footer() {
   return (
@@ -25,8 +25,8 @@ export default function Footer() {
 
         {/* Address + times */}
         <div className="text-sm text-ink/80">
-          <p>1234 Hope Street, Irvine, CA 92618</p>
-          <p>Sunday Service: 11:00 AM · Education Hall</p>
+          <p>6633 Beach Blvd, Buena Park, CA 90621</p>
+          <p>Sunday Service: 12:30 PM · Hesed Chapel Room 2</p>
         </div>
 
         {/* Social media (Connect With Us) */}

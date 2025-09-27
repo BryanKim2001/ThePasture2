@@ -13,7 +13,7 @@ export default function Hero({ onPlan }) {
     return (
         <section ref={ref} className="relative overflow-hidden">
             <motion.div
-                style={{ y, backgroundImage: `url(/worship.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                style={{ y, backgroundImage: `url(/black2.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                 className="absolute inset-0"
             />
             <div className="absolute inset-0 bg-[rgba(88,60,32,0.25)] mix-blend-multiply" />
@@ -43,7 +43,7 @@ export default function Hero({ onPlan }) {
                         <Button variant="primary" className="rounded-full px-6">Visit Us</Button>
                     </Link>
                     <Link to="/ministries">
-                        <Button variant="ghost" className="rounded-full px-6">Gatherings</Button>
+                        <Button variant="ghost" className="rounded-full px-6">When We Meet</Button>
                     </Link>
                 </motion.div>
             </div>

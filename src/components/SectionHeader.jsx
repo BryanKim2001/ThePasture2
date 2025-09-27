@@ -5,7 +5,7 @@ export default function SectionHeader({ eyebrow, title, subtitle, align = 'cente
   const alignment = align === 'center' ? 'text-center' : '';
 
   return (
-    <div className={`mx-auto max-w-3xl ${alignment} mb-10`}>
+    <div className={`mx-auto max-w-4xl ${alignment} mb-10`}>
       {/* Stagger each text row for a consistent fade-up look */}
       <Reveal stagger={0.06}>
         {eyebrow ? (

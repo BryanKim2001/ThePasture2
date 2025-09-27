@@ -21,7 +21,7 @@ export default function Header() {
     { to: '/', label: 'Home' },
     { to: '/about', label: 'About' },
     { to: '/sermons', label: 'Sermons' },      // keep; you can remove if you’ve disabled route
-    { to: '/gatherings', label: 'Gatherings' },
+    { to: '/ministries', label: 'Gatherings' },
     { to: '/connect', label: 'Contact' },
     { to: '/give', label: 'Give' },
   ];
@@ -32,12 +32,12 @@ export default function Header() {
         {/* Logo + tagline */}
         <Link to="/" className="inline-flex items-center gap-3">
           <img
-            src="/logo.png"
+            src="/pasture_logo.png"
             alt="The Pasture Logo"
-            className="h-12 w-12 object-contain rounded-full bg-paper ring-1 ring-line"
+            className="h-16 w-16 object-contain rounded-full bg-paper ring-1 ring-line"
           />
           <div className="leading-tight">
-            <p className="text-xs text-ink/60">Rest · Remember · Reflect</p>
+            <p className="text-xs text-ink/60">Remember · Reflect · Rest</p>
           </div>
         </Link>
 
