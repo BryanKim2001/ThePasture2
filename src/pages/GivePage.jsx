@@ -4,7 +4,7 @@ import Card from '../components/Card';
 import Reveal from '../components/Reveal';
 import PrettySeparator from '../components/PrettySeparator';
 
-const VENMO_HANDLE = '@ThePastureChurch'; // TODO: update to your real Venmo tag
+const VENMO_HANDLE = '@ILSHINCHURCH'; 
 
 export default function GivePage() {
   return (
@@ -16,28 +16,21 @@ export default function GivePage() {
       />
 
       <Reveal>
-        <Card className="p-6 max-w-xl mx-auto text-center">
-          {/* Venmo Logo */}
+        <Card className="p-8 max-w-2xl mx-auto text-center"> { /* TODO: Resize venmo image */}
           <img
-            src="/venmo.png"  // place your downloaded Venmo logo here
+            src="/venmo.png" 
             alt="Venmo Logo"
             className="mx-auto h-auto w-auto object-contain"
           />
 
-          {/* Venmo Tag under logo */}
           <p className="mt-3 text-xl font-semibold">{VENMO_HANDLE}</p>
 
-          {/* Giving Purpose */}
-          <p className="mt-6 text-ink/80">
+          <p className="mt-7 text-ink/70"> 
             Your giving helps us invest in <strong>discipleship</strong> (teaching & training),
             <strong> missions</strong> (local & global partnerships), and <strong>fellowship</strong>
             (hospitality & care).
           </p>
 
-          {/* Verse */}
-          <p className="mt-6 text-ink/70 italic">
-            “Come to me, all who labor and are heavy laden, and I will give you rest.” — Matthew 11:28 (ESV)
-          </p>
         </Card>
       </Reveal>
 

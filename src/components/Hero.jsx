@@ -28,7 +28,7 @@ export default function Hero({ onPlan }) {
                     className="text-white drop-shadow-2xl font-[700] text-4xl md:text-6xl leading-tight"
                     style={{ fontFamily: 'Fraunces, Georgia, serif' }}
                 >
-                    Rest Your Soul
+                    THE PASTURE
                 </motion.h1>
                 <motion.p
                     initial={{ opacity: 0, y: 16 }}
@@ -36,7 +36,15 @@ export default function Hero({ onPlan }) {
                     transition={{ duration: 0.7, delay: 0.05 }}
                     className="mt-5 max-w-2xl text-white/90 text-lg md:text-xl"
                 >
-                    A gospel-centered community in Orange County. Join us to remember, reflect, and rest in Christ together.
+                    To Remember, Reflect, and Rest in Christ together.
+                </motion.p>
+                <motion.p
+                    initial={{ opacity: 0, y: 16 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7, delay: 0.05 }}
+                    className="mt-4 max-w-xl text-white/90 text-md md:text-md"
+                >
+                    Join us on Sunday @ 12:30 PM | Friday @ 7:30 PM
                 </motion.p>
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.15 }} className="mt-8 flex gap-3">
                     <Link to="/visit">

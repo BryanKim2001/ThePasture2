@@ -12,13 +12,13 @@ export default function Footer() {
         <div className="flex flex-col items-start gap-4">
           <div className="flex items-center gap-3">
             <img
-              src="/pasture_logo.png"
+              src="/pasture_logo_3.png"
               alt="The Pasture Logo"
-              className="h-14 w-14 rounded-full object-contain bg-paper ring-1 ring-line"
+              className="h-20 w-20 rounded-full object-contain bg-paper"
             />
             <div>
               <p className="font-semibold">The Pasture</p>
-              <p className="text-sm text-ink/70">A place to rest in Christ.</p>
+              <p className="text-sm text-ink/70">Remember, Reflect, and Rest in Christ</p>
             </div>
           </div>
         </div>

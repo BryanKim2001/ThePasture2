@@ -35,8 +35,8 @@ export default function ConnectPage() {
   return (
     <div className="container py-16">
       <SectionHeader
-        eyebrow="Contact"
-        title="Contact Us"
+        eyebrow="Contact Us"
+        title=""
         subtitle="We’d love to hear from you."
       />
 

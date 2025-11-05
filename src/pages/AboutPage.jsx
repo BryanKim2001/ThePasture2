@@ -29,7 +29,7 @@ export default function AboutPage() {
                                     onError={(e) => { e.currentTarget.style.display = 'none' }}
                                 />
                             </div>
-                            <h3 className="font-semibold text-lg">Our Background</h3>
+                            <h3 className="font-semibold text-lg">Our Background</h3> { /* TODO: Reorganize w/out pics into 3 sections */}
                             <p className="muted mt-2 leading-relaxed">
                                 The Pasture is the English Ministry of young adults at Ilshin Presbyterian Church (ISPC). ISPC began in Downey and relocated to Buena Park in the summer of 2017, where our ministry has continued under the care of our mother church. <br />Over the years, we’ve experienced many seasons of change, but in early 2025 we embraced a new chapter by rebranding as The Pasture.
 

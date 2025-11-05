@@ -29,19 +29,18 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-paper/80 backdrop-blur border-b border-line">
       <div className="container flex items-center justify-between py-4">
-        {/* Logo + tagline */}
+        {/* TODO: Follow transparent behavior of bar */}
         <Link to="/" className="inline-flex items-center gap-3">
           <img
-            src="/pasture_logo.png"
+            src="/pasture_logo_3.png"
             alt="The Pasture Logo"
-            className="h-16 w-16 object-contain rounded-full bg-paper ring-1 ring-line"
+            className="h-24 w-24 object-contain bg-paper"
           />
           <div className="leading-tight">
             <p className="text-xs text-ink/60">Remember · Reflect · Rest</p>
           </div>
         </Link>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-2">
           {nav.map((n) => (
             <NavLink key={n.to} to={n.to} className={({ isActive }) => navClasses(isActive)}>

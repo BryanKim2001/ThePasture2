@@ -4,7 +4,7 @@ import Card from '../components/Card'
 import SermonEmbed from '../components/SermonEmbed'
 import Reveal from '../components/Reveal'
 
-
+/* TOOD: Work in Progress, we'll have our sermons up and running in no time */
 const SERMONS = [
     { id: 'dQw4w9WgXcQ', title: 'Abide in Christ', passage: 'John 15:1–11', preacher: 'Rev. Jane Doe', date: '2024-11-02', series: 'Life in the Vine' },
     { id: 'Zi_XLOBDo_Y', title: 'Grace That Restores', passage: 'Ephesians 2:1–10', preacher: 'Rev. John Park', date: '2024-10-27', series: 'By Grace' },

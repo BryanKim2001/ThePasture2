@@ -15,10 +15,12 @@ export default function HomePage() {
 
 
             <section className="container py-16">
-                <SectionHeader
-                    eyebrow="Welcome"
-                    title="Remember Christ, Reflect Christ, Rest in Christ"
-                    subtitle="Join a small, welcoming community that practices rest together—around the Word, prayer, and shared meals."
+                <SectionHeader  /* TODO: Fix */
+                    eyebrow="Welcome to The Pasture"
+                    title="Bring, Build, and Become"  /* TODO: change font to eyebrow */
+                    subtitle="BRING the lost, weak, and the restless.
+                     BUILD confidence and comfort in Christ.
+                     BECOME a culture of Christ to our community and beyond."
                 />
                 <div className="grid gap-6 md:grid-cols-3">
                     {[{
